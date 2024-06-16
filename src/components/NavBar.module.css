@@ -1,0 +1,60 @@
+@import url(../index.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+
+    & > h1{
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    & > .menu{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 50px 0 0;
+        cursor: pointer;
+
+        & > img{
+            margin: 3px;
+            width: 40px;
+        }
+    }
+}
+
+.scrolledIcon {
+    filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(341deg) brightness(103%) contrast(100%);
+
+}
+.navOverlay{
+    position: fixed;
+    background-color: #1D1F22;
+    overflow-y: hidden;
+    z-index: 55;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease-in-out;
+}
+
+.navLinks{
+    color: #fff;
+}

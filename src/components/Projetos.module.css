@@ -1,0 +1,96 @@
+.projetos{
+    background-image: url(../assets/img/quadrado-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.projetoImg{
+    height: 750px;
+    width: 500px;
+    /* padding: 17rem; */
+}
+
+@media screen and (max-width: 1500px) {
+
+    .textProjetos{
+        & > p{
+            max-width: 500px;
+        }
+    }
+
+    .projetoImg{
+        height: 700px;
+        /* padding: 13rem; */
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .textProjetos{
+        & > p{
+            max-width: 400px;
+        }
+    }
+
+    .projetoImg{
+        height: 650px;
+        width: 500px;
+        /* padding: 13rem; */
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .textProjetos{
+        & > p{
+            max-width: 350px;
+            margin-bottom: 0;
+        }
+    }
+
+    .projetoImg{
+        height: 650px;
+        width: 450px;
+        /* padding: 13rem; */
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .projetoImg{
+        height: 600px;
+        /* padding: 13rem 0 0 0; */
+        width: 100% !important;
+    }
+
+    .textProjetos{
+        & > p{
+            width: 350px;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 649px) {
+
+    .projetoImg{
+        height: 500px;
+        /* padding: 13rem 0 0 0; */
+        width: 350px;
+    }
+
+    .textProjetos{
+        & > p{
+            max-width: 300px;
+            margin-bottom: 0;
+        }
+    }
+
+}
